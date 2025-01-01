@@ -1,5 +1,8 @@
 #!/bin/bash
 
+apt update
+apt install -fy cmake
+
 . $(dirname $0)/epg.env
 . $(dirname $0)/guides.env
 
@@ -49,6 +52,7 @@ cd $BUILD_DIR
 if [ ! -d $BUILD_DIR/epg ]; then
   echo "Cloning EPG source..."
   git clone https://github.com/iptv-org/epg.git epg && cd $BUILD_DIR/epg
+  git checkout BellezaEmporium-patch-1
 else
   echo "Updating EPG source..."
   cd $BUILD_DIR/epg
