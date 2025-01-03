@@ -1,7 +1,9 @@
 #!/bin/bash
 
+echo "$(dirname $0)"
+
 apt update
-apt install -fy cmake
+apt install -fy cmake build-essential make
 
 . $(dirname $0)/epg.env
 . $(dirname $0)/guides.env
@@ -108,8 +110,11 @@ for SITE in $SITES; do
     watch_completion $SITE ~/$SITE.log &
   fi
 done
+echo "$(dirname $0)/channels.xml"
+echo `pwd`
 if [ -f "$(dirname $0)/channels.xml" ]; then
   SITE=curated
+  echo "$SITE"
   if [ ! -d $SITE ]; then
     mkdir $SITE
     if [ ! -h $SITE/channels.xml ]; then
@@ -119,6 +124,8 @@ if [ -f "$(dirname $0)/channels.xml" ]; then
   echo "Building guide for $SITE channels..."
   GUIDE_XML=$GUIDE_DIR/$SITE.xml
   DAYS=${CURATED_DAYS:-2}
+  echo "test1 ${GUIDE_DIR}/${SITE}.xml"
+  echo "test2 ${DAYS}"
   npm run grab -- --channels=$SITE/channels.xml --output=$GUIDE_XML --days=$DAYS 1>~/$SITE.log 2>&1 &
   watch_completion $SITE ~/$SITE.log &
 fi

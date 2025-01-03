@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="" site_id="2527">TF1 4K</channel>
-  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="" site_id="3170">CANAL+ LIGUE1 UBER EATS</channel>
-  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="" site_id="3301">M6 4K</channel>
-  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="" site_id="3501">CANAL+FOOT</channel>
-  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="" site_id="3504">CANAL+SPORT360</channel>
-  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="" site_id="90226">PUBLIC SENAT 24/24</channel>
-  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="" site_id="90434">ANTENA 3</channel>
-  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="" site_id="90437">CANAL 24 HORAS</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="TF1 4K" site_id="2527">TF1 4K</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="M6 4K" site_id="3301">M6 4K</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CANAL+FOOT" site_id="3501">CANAL+FOOT</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="CANAL+SPORT360" site_id="3504">CANAL+SPORT360</channel>
+  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="PUBLIC SENAT 24/24" site_id="90226">PUBLIC SENAT 24/24</channel>
   <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="arte.fr" site_id="111">ARTE</channel>
   <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="beINSports1.fr" site_id="1290">BEIN SPORTS 1</channel>
   <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="beINSports2.fr" site_id="1304">BEIN SPORTS 2</channel>
